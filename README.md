@@ -32,7 +32,7 @@ Link: https://docs.docker.com/desktop/setup/install
   - For Windows: `venv/Scripts/activate`
   - For Mac/Linux: `source venv/bin/activate`
 4. Install all the dependencies using `pip install -r requirements.txt`
-5. Create a .env file in root directory and paste this variable `DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/service_membership`
+5. Create a .env file and set Variable `ENV=docker` in root directory and paste this variable `DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/service_membership`
 6. Run the app using command `uvicorn app.main:app --reload`
 Next the seeding of data will happen and can test the endpoints.
 
