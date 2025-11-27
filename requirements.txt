@@ -9,3 +9,4 @@ pytest
 pytest-asyncio
 python-multipart
 greenlet
+psycopg2-binary

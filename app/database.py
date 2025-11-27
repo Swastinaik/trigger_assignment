@@ -12,6 +12,15 @@ DATABASE_URL = os.getenv(
     "postgresql+asyncpg://postgres:postgres@localhost:5432/service_membership"
 )
 
+DATABASE_URL_LOCAL=os.getenv(
+    "DATABASE_URL_LOCAL",
+    "postgresql://postgres:postgres@localhost:5432/service_membership"
+)
+
+if os.getenv("ENV") == "local":
+    DATABASE_URL = DATABASE_URL_LOCAL
+
+
 
 print(f"DEBUG: DATABASE_URL={DATABASE_URL}")
 engine = create_async_engine(DATABASE_URL, echo=True, future=True)

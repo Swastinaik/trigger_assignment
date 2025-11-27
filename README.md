@@ -1,3 +1,4 @@
+# Assignment
 Hello I'm Swasti Santosh Naik,
 I've got this project assignment and i have completed all the taks according to the given assignment.
 This is the backend API for Service Membership System (like a gym / coaching centre / salon)
@@ -56,5 +57,43 @@ Link: https://www.postgresql.org/download
 ## These are two approaches for setting up project but docker is recommeneded way for setting it up.
 
 
+## Endpoints:
+
+### Members:
+- POST /members: Create a new member
+  - Form Data:
+    - name: str
+    - phone: str
+- GET /members: Get all members
 
 
+### Plans:
+- POST /plans: Create a new plan
+  - Form Data:
+    - name: str
+    - price: float
+    - duration_days: int
+- GET /plans: Get all plans
+- DELETE /plans: Delete a plan
+
+### Subscriptions:
+- POST /subscriptions: Create a new subscription
+  - Form Data:
+    - member_id: int
+    - plan_id: int
+    - start_date: date
+- GET /subscriptions: Get all subscriptions
+- DELETE /subscriptions: Delete a subscription
+- GET /members/{member_id}/current-subscription: Get current subscription for a member
+  - Path parameter:
+    - member_id: int
+
+### Attendance:
+- POST /attendance: Create a new attendance record
+  - Form Data:
+    - member_id: int
+- GET /attendance: Get all attendance records
+- DELETE /attendance: Delete an attendance record
+- GET /members/{member_id}/attendance: Get attendance for a member
+  - Path parameter:
+    - member_id: int
