@@ -8,7 +8,7 @@ The trigger file is kept in sql/triggers.sql where the trigger file is present.
 it contains a function and trigger which will be called for every new record into attendance table,
 which will trigger to update the total_check_ins of user to be incremented bt 1.
 
-# Tech Stack:
+## Tech Stack:
 Language: Python 3.14
 Framework: FastAPI
 Database: PostgreSQL 16
@@ -16,9 +16,9 @@ ORM: SQLModel
 Other tools: Docker for PostgreSQL Service.
 
 
-# Project Setup:
+## Project Setup:
 
-## Method 1: Using Docker setup
+### Method 1: Using Docker setup
 First Ensure that the docker is installed in the System if not then below is the link for docker desktop installation
 Link: https://docs.docker.com/desktop/setup/install
 
@@ -35,7 +35,7 @@ Link: https://docs.docker.com/desktop/setup/install
 6. Run the app using command `uvicorn app.main:app --reload`
 Next the seeding of data will happen and can test the endpoints.
 
-## Method 2: Using local postgres Setup
+### Method 2: Using local postgres Setup
 First Ensure the Postgres is locally installed on host machine if not then below is the link to install it.
 Link: https://www.postgresql.org/download
 
@@ -54,7 +54,7 @@ Link: https://www.postgresql.org/download
 7. Run the app using command `uvicorn app.main:app --reload`
 
 
-## These are two approaches for setting up project but docker is recommeneded way for setting it up.
+### These are two approaches for setting up project but docker is recommeneded way for setting it up.
 
 
 ## Endpoints:
