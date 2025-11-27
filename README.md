@@ -9,11 +9,11 @@ it contains a function and trigger which will be called for every new record int
 which will trigger to update the total_check_ins of user to be incremented bt 1.
 
 ## Tech Stack:
-Language: Python 3.14
-Framework: FastAPI
-Database: PostgreSQL 16
-ORM: SQLModel
-Other tools: Docker for PostgreSQL Service.
+- Language: Python 3.14
+- Framework: FastAPI
+- Database: PostgreSQL 16
+- ORM: SQLModel
+- Other tools: Docker for PostgreSQL Service.
 
 
 ## Project Setup:
