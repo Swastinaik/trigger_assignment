@@ -1,5 +1,6 @@
 # Assignment
 Hello I'm Swasti Santosh Naik,
+Email : swastinaik273@gmail.com
 I've got this project assignment and i have completed all the taks according to the given assignment.
 This is the backend API for Service Membership System (like a gym / coaching centre / salon)
 
